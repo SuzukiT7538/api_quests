@@ -13,5 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware('auth:api')->post('/todos', 'quest3Controller@todos'
-// );
+// Route::middleware('auth:api')->post('/todos', 'quest3Controller@');
+
+Route::get('/', 'quest3Controller@showAllTodo')->middleware('cors');

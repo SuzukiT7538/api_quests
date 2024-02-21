@@ -12,7 +12,7 @@
 */
 
 Route::get('/health', 'quest3Controller@health');
-Route::get('/todos', 'quest3Controller@showAllTodo');
+// Route::get('/todos', 'quest3Controller@showAllTodo');
 Route::post('/todos', 'quest3Controller@todos');
 Route::post('/todos/{id?}', 'quest3Controller@updateTodo');
 Route::delete('/todos/{id?}', 'quest3Controller@deleteTodo');
