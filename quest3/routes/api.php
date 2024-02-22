@@ -15,4 +15,7 @@ use Illuminate\Http\Request;
 
 // Route::middleware('auth:api')->post('/todos', 'quest3Controller@');
 
-Route::get('/', 'quest3Controller@showAllTodo')->middleware('cors');
+Route::get('/todos', 'todoController@showAllTodo')->middleware('cors');
+Route::post('/todos', 'todoController@addTodo')->middleware('cors');
+Route::put('/todos/{id}', 'todoController@editTodo')->middleware('cors');
+Route::delete('/todos/{id}', 'todoController@deleteTodo')->middleware('cors');

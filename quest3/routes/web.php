@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', 'todoController@index');
 Route::get('/health', 'quest3Controller@health');
 // Route::get('/todos', 'quest3Controller@showAllTodo');
 Route::post('/todos', 'quest3Controller@todos');
